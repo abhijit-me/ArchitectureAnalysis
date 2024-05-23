@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    background: var(--bs-dark);
+    color: #FFF;
+}
+
+.shadow-all {
+    box-shadow: 0px 0px 3px #000;
+}
+
+.text-1 {
+    color: white;
+}
+
+.text-2 {
+    color: var(--bs-gray-400);
+}
+
+.text-3 {
+    color: var(--bs-gray-500);
+}
+
+.text-4 {
+    color: var(--bs-gray-600);
+}
+
+.bg-0 {
+    background: black;
+}
+
+.bg-1 {
+    background: var(--bs-dark);
+}
+
+.bg-2 {
+    background: var(--bs-gray-800);
+}
+
+.bg-3 {
+    background: var(--bs-gray-700);
+}
+
+.bg-4 {
+    background: var(--bs-gray-600);
+}
+
+.bg-n {
+    background: var(--bs-gray-400);
+}
+
+.pressable {
+    opacity: 1.0;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.pressable:active {
+    opacity: 0.2 !important;
+}

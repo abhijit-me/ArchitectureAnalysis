@@ -1,0 +1,20 @@
+<div class="chat-history-box bg-2 shadow-all">
+    <div class="bubble-div" [ngClass]="h.role=='assistant'? 'assistant-bubble' : 'user-bubble'"
+        *ngFor="let h of history">
+        <div class="chat-bubble shadow-all bg-primary" *ngIf="h.role=='user'">
+            {{h.content}}
+        </div>
+        <div class="chat-bubble shadow-all bg-3" *ngIf="h.role=='assistant'" [innerHtml]="h.content">
+        </div>
+        <div class="assistant-footer text-4" *ngIf="h.model!=''">Model: {{h.model}}, {{h.prompt_tokens}} Prompt Tokens,
+            {{h.completion_tokens}} Completion Tokens</div>
+    </div>
+</div>
+<div class="chat-box bg-2 shadow-all">
+    <div class="input-box">
+        <input type="text" name="query" class="form-control chat-text" data-bs-theme="dark" required [(ngModel)]="query"
+            placeholder="Please type your query here" maxlength="256" />
+    </div>
+    <button type="button" class="btn btn-sm btn-primary send-btn" (click)="send()"><i
+            class="bi  bi-caret-right-fill"></i></button>
+</div>

@@ -1,0 +1,85 @@
+.chat-box {
+    display: block;
+    position: absolute;
+    left: 4px;
+    bottom: 8px;
+    right: 8px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+.chat-history-box {
+    display: block;
+    position: absolute;
+    bottom: 64px;
+    left: 4px;
+    right: 8px;
+    top: 8px;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.input-box {
+    display: block;
+    position: absolute;
+    left: 12px;
+    height: 30px;
+    line-height: 28px;
+    top: 9px;
+    right: 56px;
+}
+
+.chat-text {
+    height: 30px;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.send-btn {
+    display: block;
+    position: absolute;
+    width: 36px;
+    right: 12px;
+    top: 9px;
+    height: 30px;
+}
+
+.bubble-div {
+    display: block;
+    position: relative;
+    margin: 8px 12px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.bubble-div.user-bubble {
+    text-align: right;
+}
+
+.chat-bubble {
+    display: inline-block;
+    position: relative;
+    margin: 4px 0;
+    padding: 8px 12px;
+    width: auto;
+    max-width: 70%;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.user-bubble>.chat-bubble {
+    border-radius: 12px 12px 0 12px;
+}
+
+.assistant-bubble>.chat-bubble {
+    border-radius: 12px 12px 12px 0;
+}
+
+.assistant-footer {
+    display: block;
+    position: relative;
+    height: 11px;
+    line-height: 11px;
+    font-size: 9px;
+    margin: 0 0 8px 12px;
+}

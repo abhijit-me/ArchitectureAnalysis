@@ -1,0 +1,12 @@
+<div class="upload-box bg-2 shadow-all">
+    <div class="url-box">
+        <input type="text" name="url" class="form-control url-text" data-bs-theme="dark" required [(ngModel)]="url"
+            placeholder="Input Image URL" maxlength="256" />
+    </div>
+    <button type="button" class="btn btn-sm btn-success fetch-btn" (click)="fetchUrl()">Fetch</button>
+</div>
+<div class="image-box bg-2 shadow-all">
+    <div class=content-div>
+        <img class="content-img" id="content-img" src="{{ imagePath }}" *ngIf="imagePath!=''" />
+    </div>
+</div>
